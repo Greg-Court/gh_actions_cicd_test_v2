@@ -44,6 +44,9 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-artifact # This name should match the artifact name uploaded by CI
+          github-token: ${{ secrets.GITHUB_TOKEN }} # GITHUB_TOKEN is a secret that is automatically created for every workflow run, and is always included in the secrets context
+          repository: ${{ github.repository }} # provides the repository context automatically
+          run-id: ${{ github.event.workflow_run.id }} # dynamically provides the ID of the CI workflow run that triggered this CD workflow
 
       - name: 'Deploy to Azure WebApp'
         id: deploy-to-webapp

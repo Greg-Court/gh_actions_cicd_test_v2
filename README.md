@@ -9,7 +9,6 @@ The project's directory is organized as follows:
 - `.github/workflows`: Contains the workflow files for GitHub Actions.
   - `ci.yml`: Defines the CI workflow that builds the application and runs tests.
   - `cd.yml`: Handles the CD workflow, deploying the application to Azure.
-- `node_modules`: Dependencies of the project.
 - `public`: Public assets like the HTML template.
 - `src`: Source files of the React application.
 - `vite.config.js`: Configuration file for Vite.

@@ -21,13 +21,13 @@ Other key files include:
 
 ## Key Features
 
-- **Continuous Integration**: Automatically builds and tests the project on every push to `main`, ensuring that changes do not break the build or functionality.
+- **Continuous Integration**: Automatically builds and tests the project on every push to `main` or pull request, ensuring that changes do not break the build or functionality.
 - **Continuous Deployment**: Deploys the latest version of the application to Azure Web App automatically, using the latest capabilities of GitHub Actions to manage artifacts across workflows.
-- **GitHub Actions v4**: Utilizes the enhanced features of GitHub Actions v4 to pass build artifacts between different workflows seamlessly.
+- **GitHub Actions v4**: This project uses the enhanced features of GitHub Actions v4 to pass build artifacts between different workflows. Can't believe this wasn't possible before v4!
 
 ## Deployment
 
-The project is deployed to an Azure Web App, ensuring that the latest version of the application is always available live. This setup demonstrates an end-to-end automated pipeline from code push to production deployment.
+The project was deployed to an Azure Web App (now no longer running due to cost). This setup demonstrates an end-to-end automated pipeline from code push to production deployment.
 
 ## Getting Started
 
@@ -46,7 +46,7 @@ npm install
 npm run dev
 ```
 
-You can also try to deploy this to your own Azure App Service. Detailed instructions on continuous deployment in Azure App Services can be found here: https://learn.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment?tabs=github%2Cgithubactions
+You can then try to deploy this via the available CI/CD pipelines to your own Azure App Service. Hands on practice is the best way to learn. Detailed instructions on continuous deployment for Azure App Services can be found here: https://learn.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment?tabs=github%2Cgithubactions
 
 ## Contributing
 

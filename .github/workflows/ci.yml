@@ -25,6 +25,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
 
+      # npm ci (clean install) is specifically designed for automated environments like CI/CD pipelines.
+      # Provides a faster, more predictable way to install dependencies because it strictly adheres to
+      # the versions specified in package-lock.json and doesn't modify this file.
       - name: Install dependencies
         run: npm ci
 

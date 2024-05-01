@@ -48,6 +48,12 @@ npm run dev
 
 You can then try to deploy this via the available CI/CD pipelines to your own Azure App Service. Hands on practice is the best way to learn. Detailed instructions on continuous deployment for Azure App Services can be found here: https://learn.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment?tabs=github%2Cgithubactions
 
+In your web app configuration settings, make sure you specify the following startup command:
+
+```
+npx serve -s /home/site/wwwroot -l 8080
+```
+
 ## Contributing
 
 Contributions are what make the open source community such a powerful platform for learning, inspiring, and creation. Any contributions you make are **greatly appreciated**.
